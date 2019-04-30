@@ -6,7 +6,8 @@ We covered so much today:
 - Team activities
 - The rooftop is ace
 - Building access
-- What is Britishness
+- What is Britishness 
+- British values (democracy, the rule of law, individual liberty and mutual respect for and tolerance of those with different faiths and beliefs and for those without faith.)
 - Keep going! 
 - It will all come together!
 - You will have tough weeks
