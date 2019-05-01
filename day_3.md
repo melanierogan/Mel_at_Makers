@@ -1,0 +1,1 @@
+% modulo - What remains after the number is divided so, 12%8 gives you 4 as 12 - 8, goes into 12 once and gives a remainder of 4
