@@ -31,6 +31,42 @@ woman.introduce
 
 - Scope: everytime we write `def` or `class` we open something. `def` opens a method so we can define a procedure inside, `class` opens a new class so we can define methods inside. They keyword `end` closes what you have opened. Variables define inside these scopes, cannot be read outside them.
 
+- attr_... helpers, and had to write the accessors yourself, would you write any more accessors than your class needed:
+
+If you write:
+
+```attr_writer :age``
+That gets translated into:
+```
+def age=(value)
+  @age = value
+end
+```
+If you write:
+
+```attr_reader :age```
+That gets translated into:
+```
+def age
+  @age
+end
+```
+
+If you write:
+
+```attr_accessor :age```
+That gets translated into:
+
+```
+def age=(value)
+  @age = value
+end
+
+def age
+  @age
+end
+```
+
 - Some Katas if you want them, katathon:
 *Problems for the katathon:*
 
