@@ -3,7 +3,7 @@
 - Git workshop
 - Git challenges and pairing
 - Codeline challenge
-- Working with mastery quizes
+- Working with mastery quizes (everything in Ruby is an object)
 - Meditation
 
 

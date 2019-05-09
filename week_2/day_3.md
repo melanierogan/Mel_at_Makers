@@ -2,6 +2,35 @@
 
 - Mastery quizzes
 - caught up with FT folks
+- *instance variable*, we're saving the colour property, passed as an argument to the colour= method, to the object state. 
+To save things to the object state, we use an instance variable.
+
+```
+def colour=(colour)
+  @colour = colour
+end
+```
+- Ruby *initialisers* : In Ruby, whenever we call new on a class, that class builds an object and then runs the method initialize on it:
+If we want to store information about an object as part of that object's state – as a property on the object – we need to interfere with this initialize method
+
+```
+class Person
+  def initialize(name)
+    @name = name
+  end
+
+  def introduce
+    return "Hello, I'm " + @name
+  end
+end
+
+woman = Person.new("Yasmin")
+woman.introduce
+```
+- All variables are references to objects in Ruby (regular ones like `my_string = "Hello World"`, Constants like `ONE = 1`, variables inside methods so *local variables*, and *instance variables* like `@name`, `@colour` etc)
+
+- Scope: everytime we write `def` or `class` we open something. `def` opens a method so we can define a procedure inside, `class` opens a new class so we can define methods inside. They keyword `end` closes what you have opened. Variables define inside these scopes, cannot be read outside them.
+
 - Some Katas if you want them, katathon:
 *Problems for the katathon:*
 
