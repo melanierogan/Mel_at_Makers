@@ -1,3 +1,7 @@
+
+# Command line dictionary
+
+
 ```history | grep 'command i am looking for an used once'```
 
 ```grep -r (search for text in subfolders)```
