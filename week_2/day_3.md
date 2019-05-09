@@ -1,6 +1,7 @@
 # Day 3
 
 - Mastery quizzes
+- caught up with FT folks
 - Some Katas if you want them, katathon:
 *Problems for the katathon:*
 
