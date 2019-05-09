@@ -34,15 +34,17 @@
 
 ```This will override the contents of the "bengal_cats.txt" file with the results of grep. To append command output to a file instead use >>.```
 
-```ls kitties/ prints out all files in the 'kitties' directory. What if you only want to print out txt files? Or files with names starting with "cute_"? To do that you can use asterisk symbol:
+```
+ls kitties/ prints out all files in the 'kitties' directory. What if you only want to print out txt files? Or files with names starting with "cute_"? To do that you can use asterisk symbol:
 ls kitties/*.txt
-ls kitties/cute_*```
+ls kitties/cute_*
+```
 
 ```head -N (will print out first N lines of the file)```
 
 ```tail -N (the opposite of head)```
 
-```| (allows you to "pipe" or direct the output of one command into the input of another command. For example if you wish to search for "British" in 'kitties.txt' and then search for "Shorthair" in the results of the first search you can use the combination of grep and |:  `grep British kitties.txt | grep Shorthair)````
+```| (allows you to "pipe" or direct the output of one command into the input of another command. For example if you wish to search for "British" in 'kitties.txt' and then search for "Shorthair" in the results of the first search you can use the combination of grep and |:  `grep British kitties.txt | grep Shorthair)` ```
 
 ```rm ( for removing files - Type rm FILENAME to delete a file permanently. Type rm -r DIRECTORY_NAME to remove a directory)```
 
