@@ -71,3 +71,7 @@ Integer to English: https://www.codewars.com/kata/53c94a82689f84c2dd00007d
 Caesar Cipher: https://www.codewars.com/kata/526d42b6526963598d0004db
 Human Readable Duration Format: https://www.codewars.com/kata/52742f58faf5485cae000b9a
 Sudoku Validator: https://www.codewars.com/kata/529bf0e9bdf7657179000008
+
+# Useful links: 
+
+https://makersacademy.gitbooks.io/mastery-curriculum/content/chapter10/
