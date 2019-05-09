@@ -32,10 +32,12 @@
 
 ```VIM - :wq (means you will save and exit the file you've edited)```
 
-```> operator allows you to save the output of a command to a file instead of printing it to a screen. For example with grep you can save the results of your search like this:```
-
-```grep bengal cats.txt > bengal_cats.txt
-This will override the contents of the "bengal_cats.txt" file with the results of grep. To append command output to a file instead use >>.
+```
+> operator allows you to save the output of a command to a file instead of printing it to a screen. 
+For example with grep you can save the results of your search like this:
+grep bengal cats.txt > bengal_cats.txt
+This will override the contents of the "bengal_cats.txt" file with the results of grep. 
+To append command output to a file instead use >>.
 ```
 
 ```
