@@ -1,4 +1,4 @@
-#Day 2
+# Day 2
 
 - Git workshop
 - Git challenges and pairing

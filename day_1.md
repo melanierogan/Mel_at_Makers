@@ -1,6 +1,6 @@
-#Day 1
+# Day 1
 
-##We covered so much today:
+## We covered so much today:
 
 - Pairing
 - Waterfall and agile 
