@@ -25,3 +25,6 @@ def input_students
   students
 end
 ```
+- the ```<< ``` is called a shovel operator and it's used to put things into an array
+
+- to get emojis in code, without the VS code extension ```cmd + ctrl + space```
