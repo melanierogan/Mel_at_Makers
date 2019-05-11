@@ -1,7 +1,10 @@
 # Mongodb dictionary
 
-- In the terminal:
+- In the terminal, check if you have mongo installed with brew:
 ```brew list```
+
+- start the server:
+```brew services start mongod```
 
 - starts the database, automatically connects to test 
 ```mongo```
