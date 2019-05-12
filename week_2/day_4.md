@@ -56,3 +56,7 @@ Outputs:
 
 - args go in parenthesis, they're parameters, an arg is a parameter e.g. ```center(*args)``` can be 
 ```"hello".center(4)``` where 4 is the arg, or the parameter or argument
+
+- What the ```STDIN``` is 
+```gets.chomp()``` = read ARGV first
+```STDIN.gets.chomp()``` = read user's input
