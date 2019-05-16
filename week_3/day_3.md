@@ -8,3 +8,6 @@
 ```
 open `pwd`
 ```
+- opt and down in vscode (moves the whole line you're on down, same works for up)
+- moooooore pairing with the bicylces https://github.com/JaydaKad/Boris_bikes_tuesday
+- class workshop, workings are in ruby_times > bank.rb
