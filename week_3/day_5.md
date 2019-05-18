@@ -37,6 +37,7 @@ reviewing things because i got really confused:
 - a set of expressions that returns a value
 - Other languages sometimes refer to this as a function.
 - A method may be defined as a part of a class or separately.
+- Methods are an object’s behaviour (the verb to the noun)
 
 Classes Checklist
 ------------------------------------------------
@@ -57,3 +58,10 @@ Getters and Setters
 ----------------------------------------------
 
 - A ‘getter’ is a simple function that allows you get a report of the current setting of an object’s state, and a ‘setter’ allows you to update it with a new setting.
+
+Symbols
+----------------------------------------------
+
+- Symbols are like strings, except they are code.
+- A symbol is written like this: `:something`
+
