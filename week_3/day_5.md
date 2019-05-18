@@ -18,6 +18,13 @@ rvm --default use ruby-X.X.X
 cmd + enter makes a to do ( [ ] ) and opt + d check it ([x])
 ```
 
+- Use require for installed gems
+Use require_relative for local files
+require uses your $LOAD_PATH to find the files.
+require_relative uses the current location of the file using the statement
+
+- cmd + d selecting the next-appearing text that's the same as what you already have selected. Then type in all places at once!
+
 reviewing things because i got really confused:
 ------------------------------------------------
 
@@ -66,4 +73,23 @@ Symbols
 
 - Symbols are like strings, except they are code.
 - A symbol is written like this: `:something`
+
+Methods
+
+- Variables name things, methods name behaviour (code).
+- Four things that can constitute a method : a name, a block of code, (optionally) accepting input
+and returning output
+- Methods have a name, take some input, do something with it, and return a result.
+- A method’s input is referred to as “arguments”, while its output is called a “return value”.
+- An argument list defines names for objects passed to the method, enclosed by parentheses right after the method name.
+- How arguments work:
+
+```
+def add_two(number)
+  number + 2
+end
+
+puts add_two(3)
+5
+```
 
