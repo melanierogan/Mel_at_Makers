@@ -38,6 +38,8 @@ reviewing things because i got really confused:
 - Other languages sometimes refer to this as a function.
 - A method may be defined as a part of a class or separately.
 - Methods are an object’s behaviour (the verb to the noun)
+- A dot is used to call a method on an object.
+- Predicate methods that end with a question mark ? return either true or false.
 
 Classes Checklist
 ------------------------------------------------
