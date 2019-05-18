@@ -75,6 +75,7 @@ Symbols
 - A symbol is written like this: `:something`
 
 Methods
+----------------------------------------------
 
 - Variables name things, methods name behaviour (code).
 - Four things that can constitute a method : a name, a block of code, (optionally) accepting input
