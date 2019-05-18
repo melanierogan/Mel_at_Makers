@@ -26,10 +26,12 @@ reviewing things because i got really confused:
 - an object is an instance of a class
 -  A class is like a blueprint, and an object is the concrete ’thing’ created when you make ‘instances’ of, or ‘instantiate’, this blueprint.
 - Objects are composed of two fundamental concepts. *State* and *methods*
+
 *STATE:*
 - In Ruby the ‘state’ of an object is largely contained in ‘instance variables’, represented like a normal variable, but preceded by the @ symbol.
 - These instance variables belong to the entire object, and hence their scope is ‘global’, *within the context of the object*
 - State is by default private — no other object can access another object’s instance variables.
+
 *METHODS:*
 - exist to allow the author to manipulate the state of an object.
 - a set of expressions that returns a value
