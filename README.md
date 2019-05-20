@@ -1,4 +1,4 @@
-# Mel_at_Makers
+# mel at makers
 Things I learn and do at Makers
 
 ```
@@ -10,11 +10,14 @@ Things I learn and do at Makers
                     `-------'
 ```
 
-# Start date
-29th April
+# start date
+29th April 2019
 
-# Finish date
-29th July
+# finish date
+29th July 2019
+
+# apprenticeship end date
+10th May 2020
 
 
 
