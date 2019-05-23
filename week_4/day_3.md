@@ -10,3 +10,7 @@ ruby
 --color
 --require spec_helper
 ```
+
+- delegation and trying to extract classes from one big document (todo list)
+- worked with Adrian on the oystercard project
+https://github.com/melanierogan/oyster_card_challenge
