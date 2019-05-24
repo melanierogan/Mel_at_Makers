@@ -10,7 +10,7 @@ class Person
     attr_reader :name
 
     # can make a new person with a name
-    def initialise (name)
+    def initialize (name)
         @name = name
     end
 end
