@@ -14,7 +14,7 @@ Things I learn and do at Makers
 29th April 2019
 
 # finish date
-29th July 2019
+19th July 2019
 
 # apprenticeship end date
 10th May 2020

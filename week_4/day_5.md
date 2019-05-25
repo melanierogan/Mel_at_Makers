@@ -15,3 +15,4 @@ end
 ```
 
 - `rubocop -a` correct the offences
+- Twilio fun times...watch out when using newer version of twilio-ruby with older versions of ruby
