@@ -13,3 +13,6 @@
   url VARCHAR(60)
 );
 ```
+`\q` - quit
+`\l` - list the databases
+`SELECT * FROM name_of_db`
