@@ -19,5 +19,18 @@ Things I learn and do at Makers
 # apprenticeship end date
 10th May 2020
 
+# course goals
+* Holistic understanding of a system end to end
+* Hone a debugging process
+* Proficiency in one programming language
+* Ability to make cost/benefit analysis of tech stack choices
+* Writing fully tested code
+* Communicate tech info to a non-tech audience
+* Understand day to day responsibilities of a software engineer
+* Write readable code
+* Understand how agile teams work
+* Learn mobile development
+* Effective communication and conflict management 
+
 
 
