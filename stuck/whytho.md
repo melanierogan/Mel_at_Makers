@@ -5,3 +5,4 @@
 - review getting stuck when doubling a class that has another class initialized
 - dependency injection practice
 - why use rack instead of shotgun? or the other way around? 
+https://bundler.io/v1.16/guides/sinatra.html
