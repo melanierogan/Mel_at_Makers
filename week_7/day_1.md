@@ -13,7 +13,7 @@
 https://github.com/makersacademy/course/blob/master/thermostat/README.md
 - Stretch goal  https://github.com/makersacademy/makers-twitter-bot
 * General note: sad that we're using `var`
-
+* Did some pairing and code review with Anna
 
 * Keep coming back to this project to see how much more of the format and syntax you understand as you learn more JS
 
