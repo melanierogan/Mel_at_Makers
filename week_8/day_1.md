@@ -17,7 +17,7 @@ Live on heroku here:
 https://acebook-tribute.herokuapp.com/
 
 Blog on progress: 
-https://medium.com/me/stories/public
+https://medium.com/@tribute.acebook
 
 Team:
 Manisha, Helen and Mel! 
