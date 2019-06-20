@@ -17,3 +17,5 @@ js
 ```
 
 - `.get` always takes two arguments, the url and the function
+- testing frameworks like jasmine more so (doubling, etc). Cheatsheet 
+https://devhints.io/jasmine
