@@ -41,3 +41,6 @@ function sortStudents(studentsArray, size){
 ```
 
 - slightly losing the will and need a break 🐯
+
+- what is the difference between a function and an algorithm. An algorithm is a set of high level computational steps
+that you go through that is agnostic to the language used, a function uses that algorithim.
