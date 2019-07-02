@@ -28,4 +28,12 @@ ruby goes into C, C the more efficient code to read
 
 
 Practicing JS
-Math.floor( ) function. The Math.floor() function in JavaScript is used to round off the number passed as parameter to its nearest integer in Downward direction of rounding i.g towards the lesser value. Math.floor(value) Parameters : The number to be rounded to its nearest integer in downward rounding method.
+---------
+
+`Math.floor( )` function. The `Math.floor()` function in JavaScript is used to round off the number passed as parameter to its nearest integer in Downward direction of rounding i.g towards the lesser value. Math.floor(value) Parameters : The number to be rounded to its nearest integer in downward rounding method.
+
+The `Math.random()` function is used to return a floating-point pseudo-random number between range [0,1) , 0 (inclusive) and 1 (exclusive).This random number can then be scaled according to the desired range.
+`Math.floor((Math.random() * 10) + 1);` returns a number between 1 and 10), it can also be written as `Math.floor((Math.random() * 11));`
+
+So... `Math.floor(Math.random() * 101)`
+returns a random whole number between 1 and 100
