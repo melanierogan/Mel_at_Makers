@@ -1,47 +1,146 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>acebook tribute</title>
-  </head>
-  <body>
-      <div class="container-fluid" align="center" style="padding:100px; background-color:#e9005c">
-          <img src="https://user-images.githubusercontent.com/16557524/59921834-e4372c80-9426-11e9-8402-60b0a221c52d.png" width="200" valign="center" alt="">
-          <div class="row melcolor">
-            <div class="col melcolor">
-            </div>
-              <div class="col melcolor" >
-                  <div class="melcolor" id="who" style="width: 80rem;">
-                      <h1>ace<span style="color:#ffffff">book</span></h1>
-                      <div class="login-form" style="padding-top: 50px;">
-                          <form action="/examples/actions/confirmation.php" method="post">
-                          <div class="avatar">
-                          </div>
-                              <h2 class="text-center">Member Login</h2>   
-                              <div class="form-group">
-                                <input type="text" class="form-control" name="username" placeholder="Username" required="required">
-                              </div>
-                          <div class="form-group">
-                                  <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-                              </div>        
-                              <div class="form-group">
-                                  <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
-                              </div>
-                          <div class="clearfix">
-                                  <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-                                  <a href="#" class="pull-right">Forgot Password?</a>
-                              </div>
-                          </form>
-                          <p class="text-center small">Don't have an account? <a href="#">Sign up here!</a></p>
-                      </div>
-                  </div>
-              </div>
-            <div class="col melcolor">
-            </div>
-          </div>
-        </div>
-  </body>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Create a heatmap layer</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+ 
+ 
+<div id='map'></div>
+ 
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9nYW5tYyIsImEiOiJjanh6MXAzbmIwNGl2M2xwamJ6Mnh4ZGlyIn0.ci0Fq8hiU-MtsoGWVKt4Qg';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/roganmc/cjxyz43go0h081cpccmtt9bmd',
+center: [-0.09875959999999999, 51.5245287],
+zoom: 2
+});
+ 
+map.on('load', function() {
+// Add a geojson point source.
+// Heatmap layers also work with a vector tile source.
+map.addSource('earthquakes', {
+"type": "json",
+"data": "https://tap-me.herokuapp.com/stories"
+});
+ 
+map.addLayer({
+"id": "earthquakes-heat",
+"type": "heatmap",
+"source": "earthquakes",
+"maxzoom": 9,
+"paint": {
+// Increase the heatmap weight based on frequency and property magnitude
+"heatmap-weight": [
+"interpolate",
+["linear"],
+["get", "mag"],
+0, 0,
+6, 1
+],
+// Increase the heatmap color weight weight by zoom level
+// heatmap-intensity is a multiplier on top of heatmap-weight
+"heatmap-intensity": [
+"interpolate",
+["linear"],
+["zoom"],
+0, 1,
+9, 3
+],
+// Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+// Begin color ramp at 0-stop with a 0-transparancy color
+// to create a blur-like effect.
+"heatmap-color": [
+"interpolate",
+["linear"],
+["heatmap-density"],
+0, "rgba(33,102,172,0)",
+0.2, "rgb(103,169,207)",
+0.4, "rgb(209,229,240)",
+0.6, "rgb(253,219,199)",
+0.8, "rgb(239,138,98)",
+1, "rgb(178,24,43)"
+],
+// Adjust the heatmap radius by zoom level
+"heatmap-radius": [
+"interpolate",
+["linear"],
+["zoom"],
+0, 2,
+9, 20
+],
+// Transition from heatmap to circle layer by zoom level
+"heatmap-opacity": [
+"interpolate",
+["linear"],
+["zoom"],
+7, 1,
+9, 0
+],
+}
+}, 'waterway-label');
+ 
+map.addLayer({
+"id": "earthquakes-point",
+"type": "circle",
+"source": "earthquakes",
+"minzoom": 7,
+"paint": {
+// Size circle radius by earthquake magnitude and zoom level
+"circle-radius": [
+"interpolate",
+["linear"],
+["zoom"],
+7, [
+"interpolate",
+["linear"],
+["get", "mag"],
+1, 1,
+6, 4
+],
+16, [
+"interpolate",
+["linear"],
+["get", "mag"],
+1, 5,
+6, 50
+]
+],
+// Color circle by earthquake magnitude
+"circle-color": [
+"interpolate",
+["linear"],
+["get", "mag"],
+1, "rgba(33,102,172,0)",
+2, "rgb(103,169,207)",
+3, "rgb(209,229,240)",
+4, "rgb(253,219,199)",
+5, "rgb(239,138,98)",
+6, "rgb(178,24,43)"
+],
+"circle-stroke-color": "white",
+"circle-stroke-width": 1,
+// Transition from heatmap to circle layer by zoom level
+"circle-opacity": [
+"interpolate",
+["linear"],
+["zoom"],
+7, 0,
+8, 1
+]
+}
+}, 'waterway-label');
+});
+</script>
+ 
+</body>
 </html>
