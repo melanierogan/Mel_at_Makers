@@ -10,10 +10,10 @@ Things I learn and do at Makers
                     `-------'
 ```
 
-# start date
+# makers start date
 29th April 2019
 
-# finish date
+# makers finish date
 19th July 2019
 
 # apprenticeship end date
