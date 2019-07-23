@@ -32,5 +32,7 @@ Things I learn and do at Makers
 * Learn mobile development
 * Effective communication and conflict management 
 
+# apprenticeship standard points
+https://www.thetechpartnership.com/wp-content/uploads/2018/02/occupational-brief-software-developer.pdf
 
 
